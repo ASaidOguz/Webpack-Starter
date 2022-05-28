@@ -1,6 +1,6 @@
 # This is my Webpack starter project 
 
-Create for this project ;
+Activation method  for this project ;
 
 - Clone this repository 
 
