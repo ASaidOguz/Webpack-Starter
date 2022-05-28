@@ -4,6 +4,8 @@ Activation method  for this project ;
 
 - Clone this repository 
 
+- Navigate into the cloned project via shell . 
+
 - Install the dependencies by ` npm install `
 
 - Start the project in dev mode use `npm run dev`
