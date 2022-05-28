@@ -10,4 +10,4 @@ Activation method  for this project ;
 
 - Start the project in dev mode use `npm run dev`
 
-- For building and making the project ready for deploying use `npm run build ` 
+- For building and making the project ready for deploy use `npm run build ` 
