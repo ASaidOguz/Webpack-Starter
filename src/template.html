@@ -7,12 +7,31 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0" nonce="xhcTX9iM"></script>
+   
+   
+   
+   
     <div class="container">
     
       <img id="laughImg" alt="" />
       <h3>Don't Laugh Challenge</h3>
       <div id="joke" class="joke"></div>
       <button id="jokeBtn" class="btn">Get Another Joke</button>
+      
+    <div class="fb-share-button" data-href="https://icanhazdadjoke.com" data-layout="button" data-size="small"><a target="_blank" 
+    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+     class="fb-xfbml-parse-ignore">Share</a></div>
+    
+    
     </div>
+  
+  
+  
+  
+  
+  
+  
   </body>
 </html>

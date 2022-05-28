@@ -2,7 +2,7 @@ import axios from 'axios'
 
 
 
-function generatejoke(){
+function generatejoke() {
      
 const config={
      headers:{
@@ -11,6 +11,8 @@ const config={
 }
 axios.get('https://icanhazdadjoke.com', config).then((res) => {
     document.getElementById('joke').innerHTML = res.data.joke
+    
+    return res.data.joke;
   })
 }
 
