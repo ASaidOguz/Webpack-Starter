@@ -3018,7 +3018,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function generatejoke(){
+function generatejoke() {
      
 const config={
      headers:{
@@ -3027,10 +3027,44 @@ const config={
 }
 axios__WEBPACK_IMPORTED_MODULE_0___default().get('https://icanhazdadjoke.com', config).then((res) => {
     document.getElementById('joke').innerHTML = res.data.joke
+    
+    return res.data.joke;
   })
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generatejoke);
+
+/***/ }),
+
+/***/ "./src/share.js":
+/*!**********************!*\
+  !*** ./src/share.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _generatejoke__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./generatejoke */ "./src/generatejoke.js");
+
+
+
+
+function share(){
+        
+        
+       console.log(res)
+
+
+}
+
+
+
+    /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (share);
 
 /***/ }),
 
@@ -3161,6 +3195,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _generatejoke__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./generatejoke */ "./src/generatejoke.js");
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
 /* harmony import */ var _assets_laughing_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/laughing.svg */ "./src/assets/laughing.svg");
+/* harmony import */ var _share__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./share */ "./src/share.js");
+
+
 
 
 
@@ -3171,9 +3208,12 @@ laughImg.src=_assets_laughing_svg__WEBPACK_IMPORTED_MODULE_2__
 const jokeBtn = document.getElementById('jokeBtn')
 jokeBtn.addEventListener('click', _generatejoke__WEBPACK_IMPORTED_MODULE_0__["default"])
 
+
+
+;(0,_share__WEBPACK_IMPORTED_MODULE_3__["default"])()
 ;(0,_generatejoke__WEBPACK_IMPORTED_MODULE_0__["default"])()
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle6ebba590443b7fb7d0fa.js.map
+//# sourceMappingURL=bundle1258048bbe27dd39f8b2.js.map
