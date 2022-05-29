@@ -3210,10 +3210,10 @@ jokeBtn.addEventListener('click', _generatejoke__WEBPACK_IMPORTED_MODULE_0__["de
 
 
 
-;(0,_share__WEBPACK_IMPORTED_MODULE_3__["default"])()
+
 ;(0,_generatejoke__WEBPACK_IMPORTED_MODULE_0__["default"])()
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle1258048bbe27dd39f8b2.js.map
+//# sourceMappingURL=bundle6bd8446aec88eb42307d.js.map

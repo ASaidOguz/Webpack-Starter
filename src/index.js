@@ -12,5 +12,5 @@ jokeBtn.addEventListener('click', generatejoke)
 
 
 
-share()
+
 generatejoke()
