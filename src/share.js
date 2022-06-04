@@ -5,7 +5,7 @@ import generatejoke from "./generatejoke";
 function share(){
         
         
-       console.log(res)
+       console.log("fuck u ")
 
 
 }

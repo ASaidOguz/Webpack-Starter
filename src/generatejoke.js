@@ -11,8 +11,11 @@ const config={
 }
 axios.get('https://icanhazdadjoke.com', config).then((res) => {
     document.getElementById('joke').innerHTML = res.data.joke
+    var scrt_var = res.data.id;
+    var strLink = "https://icanhazdadjoke.com/j/" + scrt_var;
+    document.getElementById("share").setAttribute("data-href",strLink);
+    console.log(strLink)
     
-    return res.data.joke;
   })
 }
 

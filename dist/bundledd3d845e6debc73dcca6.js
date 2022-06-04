@@ -3027,8 +3027,11 @@ const config={
 }
 axios__WEBPACK_IMPORTED_MODULE_0___default().get('https://icanhazdadjoke.com', config).then((res) => {
     document.getElementById('joke').innerHTML = res.data.joke
+    var scrt_var = res.data.id;
+    var strLink = "https://icanhazdadjoke.com/j/" + scrt_var;
+    document.getElementById("share").setAttribute("data-href",strLink);
+    console.log(strLink)
     
-    return res.data.joke;
   })
 }
 
@@ -3057,7 +3060,7 @@ __webpack_require__.r(__webpack_exports__);
 function share(){
         
         
-       console.log(res)
+       console.log("fuck u ")
 
 
 }
@@ -3201,19 +3204,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+const id=(0,_generatejoke__WEBPACK_IMPORTED_MODULE_0__["default"])()
 const laughImg=document.getElementById('laughImg')
 laughImg.src=_assets_laughing_svg__WEBPACK_IMPORTED_MODULE_2__
 
 const jokeBtn = document.getElementById('jokeBtn')
 jokeBtn.addEventListener('click', _generatejoke__WEBPACK_IMPORTED_MODULE_0__["default"])
 
-
-
+const sharebtn=document.getElementById('share')
+sharebtn.addEventListener('click',_share__WEBPACK_IMPORTED_MODULE_3__["default"])
 
 ;(0,_generatejoke__WEBPACK_IMPORTED_MODULE_0__["default"])()
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle6bd8446aec88eb42307d.js.map
+//# sourceMappingURL=bundledd3d845e6debc73dcca6.js.map
